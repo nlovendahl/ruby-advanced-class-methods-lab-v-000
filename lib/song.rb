@@ -41,6 +41,9 @@ class Song
     self.all.sort_by! {|s| s.name.downcase}
   end
 
+  def self.new_from_filename(filename)
+  end
+
   def save
     self.class.all << self
   end
