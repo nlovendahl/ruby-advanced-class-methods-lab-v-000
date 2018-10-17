@@ -15,6 +15,7 @@ class Song
   def self.new_by_name(name)
     song = self.new
     song.name = name
+    self.all << song
 
   def save
     self.class.all << self
