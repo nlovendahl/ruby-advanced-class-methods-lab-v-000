@@ -46,6 +46,7 @@ class Song
     song = self.new
     song.artist_name = data[0]
     song.name = data[1]
+    self.all << song
   end
 
   def save
